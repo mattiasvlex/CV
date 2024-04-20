@@ -43,6 +43,7 @@ html, body {
 
 #container-right h4 {
     margin-bottom: 0;
+    margin-top: 2.5em;
     font-weight: 500;
 }
 
@@ -59,12 +60,7 @@ html, body {
 .contents-right .company-school {
     display: inline-block;
     vertical-align: top;
-    margin-right: 3em;
-}
-
-.contents-right .position-program {
-    display: inline-block;
-    vertical-align: top;
+    width: 7em;
 }
 
 .contents-right .company-school .small {
@@ -72,12 +68,31 @@ html, body {
     font-size: 0.6em;
 }
 
-#bigger {
-    margin-top: 0.3em;
+.contents-right .company-school .bigger {
+    margin-top: 0.35em;
     margin-bottom: 0;
     font-size: 0.75em;
 }
 
+.contents-right .position-program {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.contents-right .position-program .list .small {
+    margin: 0 0 0 1.5em;
+    font-size: 0.6em;
+}
+
+.contents-right .position-program .list .bigger {
+    display: inline-block;
+    margin: 0 0 0.3em 0;
+    font-size: 0.75em;
+}
+
+.contents-right .work-school-item {
+    margin-bottom: 0.8em;
+}
 #name-address {
     display: flex;
     justify-content: space-between;
@@ -123,6 +138,7 @@ html, body {
     position: relative;
     list-style-type: none;
     text-align: left;
+    
 }
 
 .list li span {
@@ -136,14 +152,25 @@ html, body {
     background: black;
     color: black;
     position: relative;
+    margin-right: 0.1em;
 }
 
-.list li::before {
+.list li::after {
     content: '';
     position: absolute;
     background: black;
-    top: 15px;
+    top: 13px;
     left: 3px;
     width: 0.1em;
-    height: 4em;
+    height: 3.2em;
+}
+
+.list .last::after {
+    content: '';
+    position: absolute;
+    background: black;
+    top: 13px;
+    left: 3px;
+    width: 0.1em;
+    height: 2.5em;
 }
